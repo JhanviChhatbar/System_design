@@ -43,4 +43,35 @@ public class Elevator {
         elevatorState = ElevatorState.DOOR_CLOSED;
     }
 
+    public int getCurrentFloor() {
+        return currentFloor;
+    }
+
+    public void setCurrentFloor(int currentFloor) {
+        this.currentFloor = currentFloor;
+    }
+
+    public Direction getDirection() {
+        return direction;
+    }
+
+    public void setDirection(Direction direction) {
+        this.direction = direction;
+    }
+
+    public PriorityQueue<Integer> getRequests() {
+        return requests;
+    }
+
+    public void setRequests(PriorityQueue<Integer> requests) {
+        this.requests = requests;
+    }
+
+    public ElevatorState getElevatorState() {
+        return elevatorState;
+    }
+
+    public void setElevatorState(ElevatorState elevatorState) {
+        this.elevatorState = elevatorState;
+    }
 }
